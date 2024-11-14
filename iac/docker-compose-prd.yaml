@@ -1,0 +1,11 @@
+version: "3.2"
+services:
+  fablanding:
+    image: fabideia/quicktag:latest
+    restart: always
+    ports:
+      - "3055:3015"
+    environment:
+      WEBUSER: ${WEBUSER}
+      WEBPASSWORD: ${WEBPASSWORD}
+      API_URL: https://app.fabideia.com/api
